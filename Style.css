@@ -1,0 +1,72 @@
+/* Custom Styles */
+
+/* Remove hover effect on the profile image in the About section */
+#about .col-md-6 img {
+    transition: none; /* Ensure no transition is applied */
+}
+
+/* Custom Styles for other sections */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header .header-text h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+header .header-text p {
+    font-size: 1.2rem;
+}
+
+.tab-titles {
+    margin-top: 20px;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.work .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.work:hover .layer {
+    opacity: 1;
+}
+
+.work h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.work p {
+    font-size: 1rem;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}
+
+/* Custom Bootstrap Overrides */
+@media (max-width: 768px) {
+    .work img {
+        width: 100%;
+    }
+
+    .social-icons a {
+        font-size: 2rem;
+    }
+}
